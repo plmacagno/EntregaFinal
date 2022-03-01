@@ -1,31 +1,45 @@
 footer {
     background: $colorFooter;
-
+       
     .face {
         color: $colorFace;
     }
 
     .insta {
-        color: $colorInstagram;
+        color: $colorFace;
     }
 
     i {
-        font-size: 60px;
+        font-size: 40px;
+        align-content: center
     }
 
 
-    h3 {
-        @include fontStyle ($colorTexto, 36px, 300);
+    h2 {
+        @include fontStyle ($colorFace, 36px, 300);
     }
 
 }
 
 /*tamaño celular*/
 @media (max-width: 620px) {
-    footer iframe {
+    footer{
+        .row{
+        display: flex;
+        flex-direction: column; 
+        }
+
+        iframe {
         display: none;
-    }
-    footer h3{
+        }
+        h2{
         font-size: 15px;
+        }
+        i {
+        font-size: 20px;
+        }
+        p{
+        font-size: small;
+        }
     }
 }

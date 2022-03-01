@@ -1,10 +1,11 @@
 body {
     background: $colorFondo;
+    
     }
-
+        
     main img {
-        width: 70%;
-        margin: 0 auto;
+       
+         margin: 0 auto;
     }
 
     .section1 img {
@@ -83,14 +84,29 @@ body {
   
 
 /*tamaño Tablet*/
-@media (max-width: 620px) {
+@media (max-width: 768px) {
 
     body {
         .section1 {
             height: auto;
             align-items: center;
+           
+        }
+        .main div h3{
+            font-size: medium;
+            text-align: center
         }
 
+        .main div h4{
+            font-size: medium;
+            text-align: center;
+        }
+
+        .card-text{
+            margin: 20px;
+            font-size: medium;
+            width: auto;
+        }
 
         .section1 p {
             max-width: 500px;
@@ -102,7 +118,7 @@ body {
             align-items: center;
             justify-content: center;
             height: 40vh;
-            //    margin: 0px 50px;
+            
         }
 
         @keyframes agrandado {
@@ -127,6 +143,9 @@ body {
             }
         }
     }
+    .row{
+        display: row;
+    }
 }
 
 /*tamaño celular*/
@@ -140,10 +159,7 @@ body {
             align-items: center;
         }
 
-        main img {
-            display: none;
-        }
-
+        
 
         .section1 div img {
             display: none;
@@ -157,6 +173,12 @@ body {
             
         }
 
+        .card-body p{
+            font-size: small;
+        }
+        .card-body h5{
+            font-size: small;
+        }
     }
 
 }
